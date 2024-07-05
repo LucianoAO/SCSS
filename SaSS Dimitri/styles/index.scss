@@ -1,0 +1,10 @@
+// Variáveis em Sass
+@import './variaveis';
+
+// Aqui eu crio uma variável com Sass (acho que neste caso é redundante, da pra utilizar o root: seguido --.
+@import './header';
+
+.contato {
+    @include flex1();
+    @extend header;
+}

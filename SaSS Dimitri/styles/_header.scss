@@ -1,0 +1,23 @@
+@mixin flex1($direcao, $bg) {
+    display:flex;
+    background-color: $primaria;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direcao; // Row, Column etc.
+    background-color: $bg; // Cor do background
+}
+
+header {
+    @include flex1(row, blue);
+    
+    &:hover {
+        background-color: lawngreen;
+    }
+
+    button {
+        background-color: $secondary;
+        &:hover {
+            background-color: lawngreen;
+        }
+    }
+}
